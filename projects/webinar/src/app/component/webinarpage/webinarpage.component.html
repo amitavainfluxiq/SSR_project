@@ -1,0 +1,50 @@
+<h2 class="h2heading">Webinars</h2>
+
+<p class="ptext1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+
+<mat-card class="webinars_wrapper">
+
+    <ng-container *ngFor="let item of WebinarListArray | slice:0:4; let i=index">
+
+
+  <mat-card-content class="webinars_wrapper_block">
+
+
+
+       <span  class="webinars_wrapper_block_datetime">
+   <span class="webinars_date"> {{item.date}}</span>
+
+   <span class="webinars_time"> {{item.time}}</span>
+
+       </span>
+
+    <span  class="webinars_wrapper_block_wrapper">
+
+     <span class="webinars_heading"> <h2> {{item.title}}</h2> </span>
+
+
+    <span class="webinars_dtail">
+    <p>
+
+        {{item.description}}
+     </p>
+
+
+    </span>
+
+         <button class="viewadetail" (click)="openDialog(item)">Ream More...</button>
+</span>
+
+
+  </mat-card-content>
+
+    </ng-container>
+
+
+
+  <span class="clear"></span>
+
+
+  <button class="viewallbtn" [routerLink]="['/webinarinnerpage']">View All</button>
+
+</mat-card>

@@ -1,0 +1,57 @@
+<h2 class="h2heading">our Team</h2>
+
+<p class="ptext1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+
+<mat-card class="team_con_box">
+
+
+
+
+  <mat-card-subtitle *ngFor="let team of TeamListArray | slice:0:3; let i=index"  (click)="onClick(team)">
+      <span class="spanimg">
+      <img src="../../../assets/image/2.jpg"/>
+    </span>
+    <label>
+      <strong>{{team.title}}</strong>
+
+
+      {{team.department}}
+
+
+
+
+    </label>
+
+    <ul>
+
+      <!--<li><a href="tel: {{team.contact}}"> {{team.contact}}</a></li>-->
+      <li>
+        <p *ngFor="let val of team.contact">
+          <i class="material-icons">
+            phone
+          </i> <a href="tel: {{val}}"> {{val}}</a>
+        </p>
+      </li>
+      <li>
+        <p *ngFor="let val of team.email">
+          <!-- For IE9 or below. -->
+
+          <i class="material-icons">
+            email
+          </i> <a href="mailto:{{val}}" target="_top">{{val}}</a>
+        </p>
+      </li>
+    </ul>
+    </mat-card-subtitle>
+
+
+
+
+
+
+
+</mat-card>
+
+
+
+<button class="viewallbtn" [routerLink]="['/teaminnerpage']">View All</button>

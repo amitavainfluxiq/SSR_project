@@ -1,0 +1,110 @@
+<h2 class="h2heading">Webinars</h2>
+
+<p class="ptext1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+
+
+
+
+
+
+
+<mat-card class="webinars_wrapper_inner">
+
+
+
+
+  <mat-tab-group>
+    <mat-tab label="Upcoming Webinars">
+
+
+        <ng-container *ngFor="let item of WebinarListArray  ">
+      <mat-card-content class="webinars_inner_wrapper_block">
+
+        <span class="webinars_inner_banner"><img src="../../../assets/images/webinar1.jpg"/></span>
+
+        <mat-card-subtitle>
+
+     <span  class="webinars_inner_wrapper_block_datetime">
+   <span class="webinarsinner_date">{{item.date}}</span>
+
+   <span class="webinarsinner_time">{{item.time}}</span>
+
+       </span>
+
+        <span  class="webinars_inner_wrapper_block_wrapper">
+    <h2> {{item.title}}</h2>
+
+      <span class="webinars_inner_dtail">
+    <p> {{item.description}}</p>
+
+
+        <a href="{{item.link}}" target="_blank" class="webinarslink1">{{item.link}}</a>
+
+    </span>
+
+
+
+    </span>
+
+        <span class="clear"></span>
+
+        </mat-card-subtitle>
+
+      </mat-card-content>
+        </ng-container>
+
+
+
+
+
+
+
+    </mat-tab>
+
+
+    <mat-tab label="Past Webinars">
+
+        <ng-container *ngFor="let item of WebinarListArray  ">
+            <mat-card-content class="webinars_inner_wrapper_block">
+
+                <span class="webinars_inner_banner"><img src="../../../assets/images/webinar1.jpg"/></span>
+
+                <mat-card-subtitle>
+
+     <span  class="webinars_inner_wrapper_block_datetime">
+   <span class="webinarsinner_date">{{item.date}}</span>
+
+   <span class="webinarsinner_time">{{item.time}}</span>
+
+       </span>
+
+                    <span  class="webinars_inner_wrapper_block_wrapper">
+    <h2> {{item.title}}</h2>
+
+      <span class="webinars_inner_dtail">
+    <p> {{item.description}}</p>
+
+
+        <a href="{{item.link}}" target="_blank" class="webinarslink1">{{item.link}}</a>
+
+    </span>
+
+
+
+    </span>
+
+                    <span class="clear"></span>
+
+                </mat-card-subtitle>
+
+            </mat-card-content>
+        </ng-container>
+    </mat-tab>
+
+  </mat-tab-group>
+
+
+
+
+
+</mat-card>

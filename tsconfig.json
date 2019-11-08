@@ -1,0 +1,60 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "baseUrl": "./",
+    "outDir": "./dist/out-tsc",
+    "sourceMap": true,
+    "declaration": false,
+    "module": "es2015",
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es5",
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "lib": [
+      "es2018",
+      "dom"
+    ],
+    "paths": {
+      "on-page-editor": [
+        "dist/on-page-editor"
+      ],
+      "on-page-editor/*": [
+        "dist/on-page-editor/*"
+      ],
+      "rolemanagementlib": [
+        "dist/rolemanagementlib"
+      ],
+      "rolemanagementlib/*": [
+        "dist/rolemanagementlib/*"
+      ],
+      "category-management": [
+        "dist/category-management"
+      ],
+      "category-management/*": [
+        "dist/category-management/*"
+      ],
+      "lession-management": [
+        "dist/lession-management"
+      ],
+      "lession-management/*": [
+        "dist/lession-management/*"
+      ],
+      "formmanagerlib": [
+        "dist/formmanagerlib"
+      ],
+      "formmanagerlib/*": [
+        "dist/formmanagerlib/*"
+      ],
+      "blog": [
+        "dist/blog"
+      ],
+      "blog/*": [
+        "dist/blog/*"
+      ]
+    }
+  }
+}

@@ -1,0 +1,91 @@
+<h2 class="h2heading">Gallery</h2>
+
+<p class="ptext1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+
+
+<mat-card class="galleryinnerpage_body">
+
+<mat-tab-group>
+  <mat-tab label="Category 1">
+    <mat-card class="galleryinnerpage">
+
+
+
+      <mat-card-content class="galleryinnerblock" *ngFor="let item of result">
+
+        <!--<mat-card-subtitle>-->
+          <span (click)="openDialog(item)"  *ngIf="item.path == 'uploads/services' ">  <img src="https://s3.us-east-2.amazonaws.com/crmfiles.influxhostserver/services/{{item.fileservername}}"></span>
+
+     <span (click)="openDialog(item)"  *ngIf="item.path == 'uploads/files' ">  <img src="https://s3.us-east-2.amazonaws.com/crmfiles.influxhostserver/files/{{item.fileservername}}"></span>
+
+     <span (click)="openDialog(item)"  *ngIf="item.path == 'uploads/testimonial' ">  <img src="https://s3.us-east-2.amazonaws.com/crmfiles.influxhostserver/testimonial/{{item.fileservername}}"></span>
+
+        <!--</mat-card-subtitle>-->
+        <!--<span *ngIf="item.path == 'uploads/services' ">hi</span>
+        <span *ngIf="item.path == 'uploads/files' ">files</span>
+        <span *ngIf="item.path == 'uploads/testimonial' ">testimonial</span>-->
+          <!--<mat-card-subtitle> <span  *ngif="item.path == 'uploads/services'" (click)="openDialog(item)" >  <img src="https://s3.us-east-2.amazonaws.com/crmfiles.influxhostserver/services/{{item.fileservername}}"></span> </mat-card-subtitle>
+          <mat-card-subtitle> <span  *ngif="item.path == 'uploads/files'" (click)="openDialog(item)" >  <img src="https://s3.us-east-2.amazonaws.com/crmfiles.influxhostserver/services/{{item.fileservername}}"></span> </mat-card-subtitle>
+-->
+
+      </mat-card-content>
+
+
+
+
+
+      <span class="clear"></span>
+    </mat-card>
+
+
+
+  </mat-tab>
+
+
+  <mat-tab label="Category 2">
+    <mat-card class="galleryinnerpage">
+
+
+
+      <mat-card-content class="galleryinnerblock" *ngFor="let item of result">
+        <mat-card-subtitle > <span (click)="openDialog(item)" >  <img src="https://s3.us-east-2.amazonaws.com/crmfiles.influxhostserver/services/{{item.fileservername}}"></span> </mat-card-subtitle>
+
+
+      </mat-card-content>
+
+
+
+
+
+      <span class="clear"></span>
+    </mat-card>
+
+
+
+  </mat-tab>
+
+
+  <mat-tab label="Category 3">
+
+    <mat-card class="galleryinnerpage">
+
+
+
+      <mat-card-content class="galleryinnerblock" *ngFor="let item of result">
+        <mat-card-subtitle > <span (click)="openDialog(item)" >  <img src="https://s3.us-east-2.amazonaws.com/crmfiles.influxhostserver/services/{{item.fileservername}}"></span> </mat-card-subtitle>
+
+
+      </mat-card-content>
+
+
+
+
+
+      <span class="clear"></span>
+    </mat-card>
+  </mat-tab>
+</mat-tab-group>
+
+</mat-card>
+
+

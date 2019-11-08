@@ -1,0 +1,134 @@
+body{ margin: 0; padding: 0;}
+
+
+.h2heading{ text-align: center; font-size: 45px; color: #333; font-weight: normal; text-transform: capitalize; margin: 25px 0; padding: 0px;}
+
+.h2heading:after{ content: ''; display: block; width: 100px; margin: 0 auto; height: 4px; background: #f4b22a; }
+
+.ptext1{ padding: 0 15px; font-size: 18px; color: #111; line-height: 28px; text-align: center; width: 1190px; margin: 0 auto;}
+
+.clear{ clear: both; overflow: hidden; display: block;}
+
+
+.viewallbtn{ display: block; margin: 0 auto; background: #111; width: 100px; line-height: 36px; border: none; box-shadow: none; font-size: 14px; color: #fff; text-transform: uppercase; cursor: pointer; margin-bottom: 25px; }
+
+.imagegallerywrapper{ width: 1100px!important; margin: 25px auto!important; border: none!important; box-shadow: none!important; outline: none!important; padding: 0px!important;}
+
+
+.imagegallerybig{ width: auto!important;  box-shadow: none!important; outline: none!important; padding: 1%!important; padding-bottom: 0.6%!important; position: relative; background: #e6d409;  margin-bottom: 0px!important;}
+
+.imagegallerybig mat-card-subtitle{margin-bottom: 0px!important;}
+
+.imagegallerybig img{width: 100%!important;}
+
+.imagegallerybig label{ display: block!important; width: 94%; margin: 0px; padding:1% 2%; position: absolute; left: 1%; bottom: 1.5%; background: rgba(0, 0, 0, 0.5); color: #fff;}
+
+.imagegallerybig label strong{ font-weight: normal; font-size: 24px;}
+.imagegallerybig label p{ font-weight: normal; font-size: 16px; margin: 0px; padding: 5px 0;}
+.imagegallerybig label span{ font-weight: normal; font-size: 14px;}
+
+.imagegallerythum{width: 99%!important;  box-shadow: none!important; outline: none!important; padding: 0px!important; margin-top:2px!important;  margin-bottom: 0px!important; }
+
+.imagegallerythum ul{ display: table; width: 100%!important; margin: 0px!important; padding: 0px 0.5%!important; background: #e6d409;}
+
+.imagegallerythum ul li{ list-style: none; display: table-cell; text-align: center; vertical-align: middle; width: 20%;  padding:1% 0.5%; background: #e6d409; }
+
+.imagegallerythum ul li span{ height: 100px; overflow: hidden; display: block;}
+
+.imagegallerythum ul li img{ width: 100%; transition: all .2s ease-in-out;}
+.imagegallerythum ul li img:hover{ transform: scale(2.1);}
+
+.imagegallerythum_slider{ text-align: center; padding: 25px 0;}
+
+.imagegallerythum_slider span{ cursor: pointer;}
+
+
+.cdk-global-scrollblock {
+    position: relative!important;
+}
+
+/*
+.cdk-overlay-container {
+    position: absolute!important;
+}
+*/
+
+.cdk-overlay-dark-backdrop{ position: fixed!important; }
+
+
+.cdk-global-overlay-wrapper{padding: 25px 0!important;}
+
+
+.mat-dialog-container{ border: solid 5px #f4b22a!important; padding: 0px!important;}
+
+.gallerypopupcon{ margin: 0px!important; width: 500px;}
+
+.gallerypopupcon img{ width: 100%; display: block; margin: 0 auto; }
+
+
+.gallerypopupcon_text{ margin: 15px 0; padding: 0px 15px!important; display: block;}
+
+.gallerypopupcon_text strong{ font-weight: normal; font-size: 24px;}
+.gallerypopupcon_text p{ font-weight: normal; font-size: 16px; margin: 0px; padding: 5px 0;}
+.gallerypopupcon_text span{ font-weight: normal; font-size: 14px;}
+
+.galleryinnerpage{  margin: 25px auto!important; border: none!important; box-shadow: none!important; outline: none!important; padding: 0px 15px;!important; text-align: center;}
+
+.galleryinnerpage .galleryinnerblock{ display: inline-block; width: 300px;    margin: 15px!important; background: #edf2f5; padding: 0px;    }
+
+.galleryinnerpage .galleryinnerblock mat-card-subtitle{   width: 100%; height: 300px; overflow: hidden;  background: #111; margin: 0px!important;}
+
+.galleryinnerpage .galleryinnerblock mat-card-subtitle span{ display: table-cell; overflow: hidden;  width: 100%; height: 300px; text-align: center; vertical-align: middle; }
+.galleryinnerpage .galleryinnerblock img{ width: 100%; transition: all .3s ease-in-out;}
+
+.galleryinnerpage .galleryinnerblock img:hover{transform: scale(2.5);}
+
+.galleryinnerpage .galleryinnerblock p{ margin: 0px; padding: 15px;}
+
+.galleryinnerpage .galleryinnerblock p strong{font-weight: normal; font-size: 18px; margin: 0px; padding:0 0 5px 0; display: block; width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.galleryinnerpage .galleryinnerblock p span{ font-weight: normal; font-size: 14px; display: block;}
+
+
+.galleryinnerpage_body{margin: 25px auto!important; border: none!important; box-shadow: none!important; outline: none!important; padding: 0px 15px;!important; text-align: center;}
+
+.mat-ink-bar{ background-color: #dbad0f!important;}
+
+.mat-tab-labels{ text-align: center!important;  display: block!important;}
+
+.mat-tab-label{ display: inline-block!important; float: none!important;}
+
+
+.imagegaller1body {margin: 25px auto!important; border: none!important; box-shadow: none!important; outline: none!important; padding: 0px!important; width: 1190px; position: relative;  }
+.imagegaller1body  .mat-card-subtitle{ margin: 0px!important; float: left; background: #333; position: relative; }
+
+.imagegaller1body  .mat-card-subtitle label{ position: absolute; background: #fff; display: block; left: 0px; top:50%; overflow: hidden; margin-left: -120%; transition: all 0.8s ease-in-out; }
+
+.imagegaller1body  .mat-card-subtitle:hover label{  margin-left: 0px; }
+
+.imagegaller1body  .mat-card-subtitle strong{ font-weight: normal; font-size: 16px; color: #333;   padding: 15px; display: block;   }
+
+.imagegaller1body  .mat-card-subtitle img{ width:auto; height: 110%; min-width: 100%; transition: all .3s ease-in-out; }
+.imagegaller1body  .mat-card-subtitle img:hover{transform: scale(1.2);}
+
+.imagegaller1body  .mat-card-subtitle:nth-of-type(1){ width: 460px;  height: 400px; overflow: hidden;}
+.imagegaller1body  .mat-card-subtitle:nth-of-type(2){ width: 430px;  height: 400px; overflow: hidden;}
+.imagegaller1body  .mat-card-subtitle:nth-of-type(3){ width: 300px;  height: 400px; overflow: hidden;}
+.imagegaller1body  .mat-card-subtitle:nth-of-type(4){ width: 600px;  height: 380px; overflow: hidden;}
+.imagegaller1body  .mat-card-subtitle:nth-of-type(5){ width: 590px;  height: 380px; overflow: hidden;}
+
+/*.imagegaller1body  .mat-card-subtitle:nth-of-type(3) img{ width: 360%;}
+.imagegaller1body  .mat-card-subtitle:nth-of-type(4) img{ width: 150%;}
+.imagegaller1body  .mat-card-subtitle:nth-of-type(5) img{ width: 180%;}*/
+
+
+@media(max-width:1200px) {
+
+    .ptext1{ width: 90%;}
+
+}
+
+

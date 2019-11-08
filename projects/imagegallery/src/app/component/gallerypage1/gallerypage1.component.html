@@ -1,0 +1,28 @@
+<h2 class="h2heading">Gallery</h2>
+
+<p class="ptext1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+
+<mat-card class="imagegaller1body">
+  <ng-container *ngFor="let item of result | slice:0:5; let i=index">
+  <mat-card-subtitle (click)="openDialog(item)">
+
+
+
+    <img src="https://s3.us-east-2.amazonaws.com/crmfiles.influxhostserver/services/{{item.fileservername}}">
+
+    <label>
+
+
+     <strong>{{item.filelocalname}}</strong>
+
+
+    </label>
+  </mat-card-subtitle>
+  </ng-container>
+
+
+
+  <span class="clear"></span>
+</mat-card>
+
+<button class="viewallbtn" [routerLink]="['/galleryinnerpage']">View All</button>
